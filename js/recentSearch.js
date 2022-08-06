@@ -8,16 +8,12 @@ const $sform = $("#sform");
 const $input = $("input#query");
 
 // kwd_lst 선언 (최근 검색어 ul)
-const $kwd_lst = $('.kwd_lst');
+const $recent_lst = $('.recent_list');
 // autoFrame 선언(최근검색어 창)
 const $autoFrame = $('#autoFrame');
-// nautocomplete 선언
-const $nautocomplete = $('#nautocomplete');
 
-
-// 자동완성 기능 flag
-let isRecentSearch = true;
-
+// kwd_info 선언
+const $no_data = $('.no_data');
 
 let recentSearchData = [
   // { search: "스파르타 코딩클럽 웹 퍼블리싱"},
@@ -26,10 +22,10 @@ let recentSearchData = [
 // 최근 검색어 리스트(li)를 만드는 함수
 const createRecentItem = () => {
   // 초기화
-  $kwd_lst.empty();
+  $recent_lst.empty();
   recentSearchData.forEach((item, index) => {
     // li 만들기
-    $kwd_lst.append(
+    $recent_lst.append(
       `
       <li class="item recent_item" data-rank="${index + 1}" data-template-type="history" data-keyword="${item.search}">
         <a href="#" class="kwd">
@@ -43,12 +39,10 @@ const createRecentItem = () => {
   })
 }
 
+const showOlnyRecentItem = () => {
+  $no_data.hide();
+}
 // 검색창 초기화 함수
 const cleanInput = () => {
   $input.val('');
-}
-
-// 개별삭제
-const deleteSelectedItem = (index) => {
-  recentSearchData.splice(index, 1);
 }
