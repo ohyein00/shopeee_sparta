@@ -1,9 +1,17 @@
 /*-------------------------------------------------------------------
    style.css :: 1-4주차 목차에 구성되지 않은 기타 섹션들 스타일 정의
 -------------------------------------------------------------------*/
+
+
+/*-------------------------------------------------------------------
+  quick_menu_sec
+-------------------------------------------------------------------*/
+
 .quick_menu_sec{
-    margin: 10px auto 0;
+    padding-top:10px;
     min-height: 108px;
+    background:#fff;
+    box-shadow: 0 1px 1px 0 rgb(0 0 0 / 5%);
 }
 .quick_menu_sec .menu_list{
     display:flex;
@@ -19,13 +27,10 @@
     text-align:center;
     padding:1rem 1.5rem;
 }
-.quick_menu_sec .menu_item a img{
-    width:4.5rem;
-}
 .quick_menu_sec .menu_item p{
     display:block;
     text-align:center;
-    margin-top:0.7rem;
+    margin-top:0.5rem;
     font-weight:500;
     line-height:1.2;
     font-size:1.3rem;
@@ -34,3 +39,43 @@
 .quick_menu_sec .menu_item:hover{
     transform:translateY(-0.3rem);
 }
+.quick_menu_sec .menu_item .menu_bg{
+    display:inline-block;
+    width:4.5rem;
+    height:4.5rem;
+    background-position:center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+.quick_menu_sec .menu_item .menu_01{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_01.png');
+}
+.quick_menu_sec .menu_item .menu_02{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_02.png');
+}
+.quick_menu_sec .menu_item .menu_03{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_03.png');
+}
+.quick_menu_sec .menu_item .menu_04{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_04.png');
+}
+.quick_menu_sec .menu_item .menu_05{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_05.png');
+}
+.quick_menu_sec .menu_item .menu_06{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_06.png');
+}
+.quick_menu_sec .menu_item .menu_07{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_07.png');
+}
+.quick_menu_sec .menu_item .menu_08{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_08.png');
+}
+.quick_menu_sec .menu_item .menu_09{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_09.png');
+}
+.quick_menu_sec .menu_item .menu_10{
+    background-image: url('../img/icon/quickMenu/ic_quickMenu_10.png');
+}
+
+

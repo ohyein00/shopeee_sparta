@@ -4,6 +4,7 @@
 -------------------------------------------------------------------*/
 .visual_sec{
     padding-top:30px;
+    background:#fff;
 }
 .slide_container{
     width:100%;
@@ -28,15 +29,15 @@
 
 
 /*-------------------------------------------------------------------
-        ## full_slide
+        ## full_slider
 -------------------------------------------------------------------*/
 
-.full_slide{
+.full_slider{
     position:relative;
     width:100%;
     height:100%;
 }
-.full_slide .nav{
+.full_slider .nav{
     opacity:0;
     transition:all 0.3s;
     position:absolute;
@@ -51,31 +52,31 @@
     align-items: center;
     justify-content: center;
 }
-.full_slide .nav_next{
+.full_slider .nav_next{
     right:0;
 }
-.full_slide .nav_prev{
+.full_slider .nav_prev{
     left:0;
 }
-.full_slide .nav svg{
+.full_slider .nav svg{
     width:20px;
     height:20px;
 }
 
-.full_slide:hover .nav{
+.full_slider:hover .nav{
     opacity:1;
 }
-.full_slide:hover .nav:hover{
+.full_slider:hover .nav:hover{
     background:rgba(0,0,0,0.4);
 }
-.full_slide .pagination{
+.full_slider .pagination{
     position: absolute;
     bottom: 30px;
     left: 0;
     z-index: 1;
     text-align: center;
 }
-.full_slide .pagination .swiper-pagination-bullet{
+.full_slider .pagination .swiper-pagination-bullet{
     width: 0.9rem;
     height: 0.9rem;
     border-radius: 50%;
@@ -85,7 +86,7 @@
     border: 1px solid hsla(0,0%,53.7%,.4);
     background-color: hsla(0,0%,100%,.4);
 }
-.full_slide .pagination .swiper-pagination-bullet-active{
+.full_slider .pagination .swiper-pagination-bullet-active{
     background: var( --main-color)
 }
 
@@ -103,7 +104,7 @@
     background-image: url('../img/top_banner/img_fullbanner_03.png');
 }
 /*-------------------------------------------------------------------
-        ## .visual_sec static_banner_group
+        ## visual_sec static_banner_group
 -------------------------------------------------------------------*/
 .visual_sec .static_banner_group{
     display:flex;
@@ -125,4 +126,6 @@
 .visual_sec .static_banner_group .banner_02{
     background-image: url('../img/top_banner/img_static_banner_01.png');
 }
-
+/*-------------------------------------------------------------------
+        ## category slide section
+-------------------------------------------------------------------*/
