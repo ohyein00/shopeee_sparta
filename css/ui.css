@@ -1,4 +1,11 @@
+/*-------------------------------------------------------------------
+   ui.css :: 모든 구조에서 사용된 공통 css를 정의
+-------------------------------------------------------------------*/
+body{
+    font-family: 'Roboto', sans-serif;
+}
 /* color */
+
 :root {
     --main-color: #f53d2d;
     --red-01: #d0011b;
@@ -9,6 +16,7 @@
 }
 
 /* layout */
+
 .set_inner{
     width:100%;
     max-width:1200px;
@@ -37,4 +45,12 @@
 
 #contents{
     padding-top:11.9rem;
+}
+
+/* banner */
+.full_bg{
+    width:100%;
+    height:100%;
+    background-size:cover;
+    background-position:center center;
 }

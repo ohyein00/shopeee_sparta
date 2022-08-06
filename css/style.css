@@ -1,16 +1,36 @@
-.blind {
-    position: absolute;
-    clip: rect(0 0 0 0);
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    overflow: hidden;
+/*-------------------------------------------------------------------
+   style.css :: 1-4주차 목차에 구성되지 않은 기타 섹션들 스타일 정의
+-------------------------------------------------------------------*/
+.quick_menu_sec{
+    margin: 10px auto 0;
+    min-height: 108px;
 }
-fieldset,
-img {
-    border: 0;
+.quick_menu_sec .menu_list{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.quick_menu_sec .menu_item{
+    transition:all 0.3s;
+    flex:1;
+}
+.quick_menu_sec .menu_item a{
+    display:block;
+    text-align:center;
+    padding:1rem 1.5rem;
+}
+.quick_menu_sec .menu_item a img{
+    width:4.5rem;
+}
+.quick_menu_sec .menu_item p{
+    display:block;
+    text-align:center;
+    margin-top:0.7rem;
+    font-weight:500;
+    line-height:1.2;
+    font-size:1.3rem;
 }
 
-.shopee-svg-icon{
-    width:100px
+.quick_menu_sec .menu_item:hover{
+    transform:translateY(-0.3rem);
 }

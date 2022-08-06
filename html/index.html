@@ -137,25 +137,25 @@
                 </fieldset>
               </form>
               <div id="autoFrame" class="recent_wrapper">
-                      <ul class="recent_list">
-                        <!-- 기록 들어가는 자리 -->
-                        <!--
-        <li class="item recent_item" data-rank="${index + 1}" data-template-type="history" data-keyword="${item.search}">
-          <a href="#" class="kwd">
-            <span class="fix">
-              <span>${item.search}</span>
-            </span>
-          </a>
-        </li>
-                        -->
-                      </ul>
-                      <!-- 전체삭제 후에 보여지는 화면-->
-                      <div class="no_data">
-                        <span>최근 검색어 내역이 없습니다.</span>
-                       </div>
-                    </div>
-
+                <ul class="recent_list">
+                  <!-- 기록 들어가는 자리 -->
+                  <!--
+  <li class="item recent_item" data-rank="${index + 1}" data-template-type="history" data-keyword="${item.search}">
+    <a href="#" class="kwd">
+      <span class="fix">
+        <span>${item.search}</span>
+      </span>
+    </a>
+  </li>
+                  -->
+                </ul>
+                <!-- 전체삭제 후에 보여지는 화면-->
+                <div class="no_data">
+                  <span>최근 검색어 내역이 없습니다.</span>
+                </div>
               </div>
+
+            </div>
 
             <div class="recommend_comment">
               <a href="#">Tas Wanita</a>
@@ -187,19 +187,118 @@
       <div class="set_inner">
         <div class="banner_wrapper">
           <div class="slide_container">
-            <div class="swiper">
+            <div class="full_slide" id="topSlider">
               <!-- Additional required wrapper -->
               <div class="swiper-wrapper">
-                <div class="swiper-slide">Slide 1</div>
-                <div class="swiper-slide">Slide 2</div>
-                <div class="swiper-slide">Slide 3</div>
+                <div class="swiper-slide banner banner_01 full_bg"></div>
+                <div class="swiper-slide banner banner_02 full_bg"></div>
+                <div class="swiper-slide banner banner_03 full_bg"></div>
               </div>
+              <div class="pagination"></div>
+              <button class="nav nav_prev f_white">
+                <svg enable-background="new 0 0 13 20" viewBox="0 0 13 20" role="img"
+                     class="stardust-icon stardust-icon-arrow-left-bold">
+                  <path stroke="none" d="m4.2 10l7.9-7.9-2.1-2.2-9 9-1.1 1.1 1.1 1 9 9 2.1-2.1z"></path>
+                </svg>
+              </button>
+              <button class="nav nav_next f_white">
+                <svg enable-background="new 0 0 13 21" viewBox="0 0 13 21" role="img"
+                     class="stardust-icon stardust-icon-arrow-right-bold">
+                  <path stroke="none" d="m11.1 9.9l-9-9-2.2 2.2 8 7.9-8 7.9 2.2 2.1 9-9 1-1z"></path>
+                </svg>
+              </button>
             </div>
           </div>
-          <div class="banner_group">
-            <figure class="banner_item"></figure>
-            <figure class="banner_item"></figure>
+          <div class="static_banner_group">
+            <figure class="banner banner_01 full_bg"></figure>
+            <figure class="banner banner_02 full_bg"></figure>
           </div>
+        </div>
+      </div>
+    </section>
+    <section class="quick_menu_sec">
+      <div class="set_inner">
+      <ul class="menu_list">
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_01.png" alt="
+            Shopee Pilih Lokal">
+            <p>Shopee Pilih Lokal</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_02.png" alt="
+           Elektronik 100% ORI">
+            <p>Elektronik 100% ORI</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_03.png" alt="
+            Pulsa, Tagihan & Tiket">
+            <p>Pulsa, Tagihan & Tiket</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_04.png" alt="
+            inFashion">
+            <p>inFashion</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_05.png" alt="
+            Shopee Supermarket">
+            <p>Shopee Supermarket</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_06.png" alt="
+            Bayar Di Tempat">
+            <p>Bayar Di Tempat</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_07.png" alt="
+            Murah Lebay">
+            <p>Murah Lebay</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_08.png" alt="
+            Gratis Ongkir & Voucher">
+            <p>Gratis Ongkir & Voucher</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_09.png" alt="
+            Promo Bank">
+            <p>Promo Bank</p>
+          </a>
+        </li>
+        <li class="menu_item">
+          <a href="">
+            <img src="../img/icon/quickMenu/ic_quickMenu_10.png" alt="
+            Semua Promo">
+            <p>Semua Promo</p>
+          </a>
+        </li>
+      </ul>
+      </div>
+    </section>
+    <section class="category_sec">
+      <div class="set_inner">
+        <div class="category_wrap">
+          <p class="sec_ttl">KATEGORI</p>
+            <div class="category_container">
+              <div class=""></div>
+            </div>
         </div>
       </div>
     </section>
