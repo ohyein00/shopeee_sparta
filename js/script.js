@@ -53,4 +53,24 @@ $sform.on("submit", function (e) {
   // 최근 검색창 항상 보여주기
   $autoFrame.show();
 });
+
+//----------- tab switch
+  $salesTab = $('#salesTab')
+  $tabButtons = $salesTab.find('.tab button')
+  $itemGroup = $salesTab.find('.item_group')
+
+  $tabButtons.on('click',function(){
+    // tab 스위치
+    $tabButtons.each(function(i){
+      $tabButtons.eq(i).removeClass('is_active')
+    })
+    $(this).addClass('is_active')
+
+    // item_group 스위치
+    $itemGroup.each(function(i){
+      $itemGroup.eq(i).removeClass('is_active')
+    })
+    const activeNum = $(this).data('tab-num')
+    $itemGroup.eq(activeNum).addClass('is_active')
+  })
 })
