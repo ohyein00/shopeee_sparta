@@ -47,34 +47,34 @@
     background-size:contain;
     background-repeat: no-repeat;
 }
-.quick_menu_sec .menu_item .menu_01{
+.quick_menu_sec .menu_01 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_01.png');
 }
-.quick_menu_sec .menu_item .menu_02{
+.quick_menu_sec .menu_02 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_02.png');
 }
-.quick_menu_sec .menu_item .menu_03{
+.quick_menu_sec .menu_03 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_03.png');
 }
-.quick_menu_sec .menu_item .menu_04{
+.quick_menu_sec .menu_04 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_04.png');
 }
-.quick_menu_sec .menu_item .menu_05{
+.quick_menu_sec .menu_05 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_05.png');
 }
-.quick_menu_sec .menu_item .menu_06{
+.quick_menu_sec .menu_06 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_06.png');
 }
-.quick_menu_sec .menu_item .menu_07{
+.quick_menu_sec .menu_07 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_07.png');
 }
-.quick_menu_sec .menu_item .menu_08{
+.quick_menu_sec .menu_08 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_08.png');
 }
-.quick_menu_sec .menu_item .menu_09{
+.quick_menu_sec .menu_09 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_09.png');
 }
-.quick_menu_sec .menu_item .menu_10{
+.quick_menu_sec .menu_10 .menu_bg{
     background-image: url('../img/icon/quickMenu/ic_quickMenu_10.png');
 }
 

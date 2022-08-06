@@ -11,6 +11,9 @@ body{
     --main-color: #f53d2d;
     --red-01: #d0011b;
     --red-02: #ee4d2d;
+    --gray-01: #666;
+    --gray-02: #777;
+    --gray-03: #999;
 }
 .f_white{
     fill:#fff;
