@@ -15,9 +15,14 @@ body{
     --gray-02: #777;
     --gray-03: #999;
 }
+
 .f_white{
     fill:#fff;
 }
+
+.c_red_01{color:var(--red-01)}
+.c_red_02{color:var(--red-02)}
+
 
 /* layout */
 
@@ -49,6 +54,7 @@ body{
 
 #contents{
     padding-top:11.9rem;
+    padding-bottom:12rem;
 }
 
 /* banner */

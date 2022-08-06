@@ -29,7 +29,3 @@ const categorySlider = new Swiper('#categorySlider .category_slider', {
     prevEl: '#categorySlider .nav_prev',
   },
 });
-$(function(){
-  topSlider()
-  categorySlider()
-})

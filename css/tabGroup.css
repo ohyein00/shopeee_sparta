@@ -1,0 +1,146 @@
+/*-------------------------------------------------------------------
+        ## sale tab section layout
+-------------------------------------------------------------------*/
+.sale_tab_sec{
+    margin-top:30px;
+}
+/*-------------------------------------------------------------------
+        ## tab container
+-------------------------------------------------------------------*/
+.tab_container{
+    background:#fff;
+    box-shadow: 0 1px 3px 0 rgb(0 0 0 / 5%);
+    margin-bottom:10px;
+    height:5.8rem;
+}
+.tab_list{
+    display:flex;
+    align-items: stretch;
+    height:100%;
+}
+.tab_list .tab{
+    display:flex;
+    justify-content: center;
+}
+.tab_list .tab p{
+    font-size:1.6rem;
+    font-weight:500;
+}
+.tab_list .tab img{
+    zoom:0.5;
+}
+.tab_list .tab button{
+    position:relative;
+    width:100%;
+    padding:0 4.5rem;
+}
+.tab_list .tab button::after{
+    content:'';
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:4px;
+    width:100%;
+    background:var(--red-02);
+    opacity:0;
+    transition:all 0.2s;
+}
+.tab_list .tab button.is_active::after{
+    opacity:1;
+}
+/*-------------------------------------------------------------------
+        ## sale item container
+-------------------------------------------------------------------*/
+.sales_container .item_group{
+    display:none;
+}
+.sales_container .item_group.is_active{
+    display:flex;
+}
+.sales_container .sales_item_list{
+    display:flex;
+    flex-wrap:wrap;
+}
+.sales_container .sales_item_list .sales_item{
+    width: 16.66667%;
+    box-sizing: border-box;
+    padding:5px;
+}
+.sales_item a{
+    display:block;
+    z-index: 1;
+    cursor:pointer
+}
+.sales_item .content_area{
+    position:relative;
+    background:#fff;
+}
+.sales_item img{
+    width:100%;
+}
+.sales_item .text_area{
+    padding:1rem;
+}
+.sales_item .item_ttl{
+    font-size:1.2rem;
+    margin-bottom:2.5rem;
+    line-height:1.2;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+.sales_item .item_price_area{
+    display:flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+.item_price .num{
+    font-size:1.6rem;
+    color:var(--red-02);
+    font-weight:bold;
+}
+.item_price small{
+    font-size:1.3rem;
+    color:var(--red-02);
+}
+.item_price_area .item_total {
+    color:var(--gray-03);
+    font-size:1.2rem;
+}
+/* hover action */
+.sales_item .content_area{
+    position:relative;
+    transition:all 0.2s;
+}
+.sales_item:hover{
+    z-index:1;
+}
+.sales_item:hover .content_area{
+    transform:translateY(-5px);
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    border:1px solid var(--red-02);
+}
+.sales_item:hover .content_area::after{
+    content:'Produk Serupa';
+    position:absolute;
+    bottom:0;
+    left:-1px;
+    right:-1px;
+    padding:1rem;
+    transform:translateY(100%);
+    text-align:center;
+    color:#fff;
+    background:var(--red-02);
+    font-size:1.4rem;
+}
+
+.homework_area p{
+    width:100%;
+    font-weight:bold;
+    padding:3rem;
+    text-align:center;
+    font-size:2rem;
+}
