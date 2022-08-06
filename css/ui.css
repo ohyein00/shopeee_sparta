@@ -32,3 +32,9 @@
 .ic_area .ic.ic_twitter{
     background-image: url('../img/icon/sns/ic_twitter.png');
 }
+
+/*content*/
+
+#contents{
+    padding-top:11.9rem;
+}

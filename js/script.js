@@ -3,6 +3,9 @@ $(function(){
 // ico_arr 이미지 변경
 $input.on("click", function () {
   // 검색기록창 토글
+  if(recentSearchData.length === 0){
+    $no_data.show()
+  }
   $autoFrame.toggle();
 });
 
@@ -11,8 +14,6 @@ $input.on("click", function () {
 
 // ------------ 아래 부분 기존 naver랑 다르게 변경되었습니다 --------//
 $(document).on('mouseup',function(e){
-  console.log($('#autoFrame'))
-  console.log(e.target)
   if($autoFrame.has(e.target).length === 0){
     $autoFrame.hide()
   }
@@ -34,7 +35,6 @@ $sform.on("submit", function (e) {
     alert('검색어를 입력하세요!')
     return;
   }
-
   // recentSearchData 배열에 넣을 객체 만들기
   const recentSearchItem = {};
   recentSearchItem.search = query;
@@ -48,20 +48,9 @@ $sform.on("submit", function (e) {
 
   // 검색창 초기화
   cleanInput();
+  // 최근 검색 기록 화면만 보여주기
+  showOlnyRecentItem();
   // 최근 검색창 항상 보여주기
   $autoFrame.show();
-});
-
-// 개별삭제 클릭시 데이터 해당 데이터 삭제
-// 삭제 버튼(bt_item del)은 동적 생성 되는 엘리먼트라
-// event delegation 을 사용
-// https://learn.jquery.com/events/event-delegation/
-$search.on('click', '.bt_item._del' , function(){
-  // 부모 li data-rank 를 가져와서 -1 을 한후 index로 사용
-  const index = $(this).parents('li').data('rank') - 1;
-  // 개별 삭제
-  deleteSelectedItem(index);
-  // 최근 검색어(li) 다시 만들기
-  createRecentItem();
 });
 })

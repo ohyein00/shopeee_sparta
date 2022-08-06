@@ -1,5 +1,9 @@
 
 header {
+    position:fixed;
+    top:0;
+    left:0;
+    right:0;
     width: 100%;
     background: linear-gradient(-180deg, #f53d2d, #f63);
     color: #fff;
@@ -194,6 +198,25 @@ header .logo_area a {
     background:#fff;
     box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
     border-radius: 2px;
+    color:#595959;
+}
+.recent_wrapper .no_data{
+    display:none;
+    position:absolute;
+    z-index:1;
+    top:0;
+    width:100%;
+    left:0;
+    right:0;
+    background:#fff;
+    box-shadow: 0 1px 4px 0 rgb(0 0 0 / 26%);
+    border-radius: 2px;
+}
+.recent_wrapper .no_data span{
+    display:block;
+    padding:4rem 1.2rem;
+    text-align:center;
+    font-size:1.4rem;
 }
 .recent_list{
     width:100%;
@@ -203,9 +226,6 @@ header .logo_area a {
     font-size:1.4rem;
     cursor:pointer;
 
-}
-.recent_list .recent_item .fix{
-    color:#595959;
 }
 .recent_list .recent_item:hover{
     background:#fafafa;
