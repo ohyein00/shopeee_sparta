@@ -1,0 +1,16 @@
+.blind {
+    position: absolute;
+    clip: rect(0 0 0 0);
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+}
+fieldset,
+img {
+    border: 0;
+}
+
+.shopee-svg-icon{
+    width:100px
+}

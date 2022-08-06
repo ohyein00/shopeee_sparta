@@ -1,0 +1,34 @@
+/* color */
+:root {
+    --main-color: #f53d2d;
+    --red-01: #d0011b;
+    --red-02: #ee4d2d;
+}
+.f_white{
+    fill:#fff;
+}
+
+/* layout */
+.set_inner{
+    width:100%;
+    max-width:1200px;
+    margin:0 auto;
+}
+.ic_area .ic{
+    display:inline-block;
+    width:2rem;
+    height:2rem;
+    background-position:center center;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+/* icon */
+.ic_area .ic.ic_facebook{
+    background-image: url('../img/icon/sns/ic_facebook.png');
+}
+.ic_area .ic.ic_insta{
+    background-image: url('../img/icon/sns/ic_insta.png');
+}
+.ic_area .ic.ic_twitter{
+    background-image: url('../img/icon/sns/ic_twitter.png');
+}
