@@ -29,6 +29,7 @@ body{
 .set_inner{
     width:100%;
     max-width:1200px;
+    min-width:1050px;
     margin:0 auto;
 }
 .ic_area .ic{

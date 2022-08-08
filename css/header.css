@@ -70,11 +70,32 @@ header {
 .navbar .nav_popover + .nav_popover {
     margin-left: 1rem;
 }
-
-.navbar_area .social_area {
-    margin-left: .5rem;
+.navbar_area .social_area{
+    display:flex;
+    align-items: center;
+    opacity:.95;
 }
-
+.navbar_area .social_area p{
+    position:relative;
+    margin:0 0.5rem 0 0.7rem;
+    padding-left: 0.8rem;
+    font-size: 1.3rem;
+}
+.navbar_area .social_area p::before {
+    content: "";
+    height: 1rem;
+    width: 0;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    top: 0.2rem;
+}
+.navbar_area .social_area .ic{
+    display:inline-block;
+    margin-right:0.5rem;
+}
 .navbar.user_nav {
     margin-left: 2rem;
     font-weight: bold;
