@@ -41,15 +41,26 @@ body{
 }
 /* icon */
 .ic_area .ic.ic_facebook{
-    background-image: url('../img/icon/sns/ic_facebook.png');
+    background-image: url('../img/icon/ic_facebook.png');
 }
 .ic_area .ic.ic_insta{
-    background-image: url('../img/icon/sns/ic_insta.png');
+    background-image: url('../img/icon/ic_insta.png');
 }
 .ic_area .ic.ic_twitter{
-    background-image: url('../img/icon/sns/ic_twitter.png');
+    background-image: url('../img/icon/ic_twitter.png');
 }
-
+.ic_area .ic.ic_twitter{
+    background-image: url('../img/icon/ic_twitter.png');
+}
+.ic_area .ic.ic_reset{
+    background-image: url('../img/icon/ic_reset.png');
+}
+.ic_area .ic.ic_safe{
+    background-image: url('../img/icon/ic_safe.png');
+}
+.ic_area .ic.ic_delivery{
+    background-image: url('../img/icon/ic_delivery.png');
+}
 /*content*/
 
 #contents{
