@@ -61,6 +61,7 @@
 .sales_container .sales_item_list{
     display:flex;
     flex-wrap:wrap;
+    width:100%;
 }
 .sales_container .sales_item_list .sales_item{
     width: 16.66667%;

@@ -60,17 +60,12 @@ $sform.on("submit", function (e) {
   $itemGroup = $salesTab.find('.item_group')
 
   $tabButtons.on('click',function(){
-    // tab 스위치
-    $tabButtons.each(function(i){
-      $tabButtons.eq(i).removeClass('is_active')
-    })
-    $(this).addClass('is_active')
-
-    // item_group 스위치
-    $itemGroup.each(function(i){
-      $itemGroup.eq(i).removeClass('is_active')
-    })
     const activeNum = $(this).data('tab-num')
-    $itemGroup.eq(activeNum).addClass('is_active')
+    const activeGroup = $salesTab.find('#group_'+ activeNum)
+
+    $tabButtons.removeClass('is_active')
+    $itemGroup.removeClass('is_active')
+    $(this).addClass('is_active')
+    activeGroup.addClass('is_active')
   })
 })

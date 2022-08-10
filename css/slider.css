@@ -28,7 +28,7 @@
 }
 
 /*-------------------------------------------------------------------
-        ## banner
+        ## banner 공통 스타일
 -------------------------------------------------------------------*/
 .banner a{
     display:block;
@@ -39,7 +39,7 @@
     text-indent: -1000000px;
 }
 /*-------------------------------------------------------------------
-        ## full_slider
+        ## full_slider 공통 스타일
 -------------------------------------------------------------------*/
 
 .full_slider{
@@ -102,7 +102,7 @@
 }
 
 /*-------------------------------------------------------------------
-        ## topSlider full_banner background
+        ## id="topSlider"
 -------------------------------------------------------------------*/
 
 #topSlider .banner.banner_01{
@@ -115,7 +115,7 @@
     background-image: url('../img/top_banner/img_fullbanner_03.png');
 }
 /*-------------------------------------------------------------------
-        ## visual_sec static_banner_group
+        ## static_banner_group
 -------------------------------------------------------------------*/
 .visual_sec .static_banner_group{
     display:flex;
@@ -158,7 +158,7 @@
     color:var(--gray-02);
 }
 /*-------------------------------------------------------------------
-        ## ccategory slider
+        ## category slider 공통 스타일
 -------------------------------------------------------------------*/
 .category_container{
     position:relative;
@@ -185,6 +185,53 @@
     background-repeat: no-repeat;
 }
 
+.category_container .nav{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    position:absolute;
+    z-index:1;
+    top:50%;
+    width:2.5rem;
+    height:2.5rem;
+    border-radius: 10em;
+    box-shadow: 0 0 10px rgba(0,0,0,0.12);
+    background:#fff;
+    transition:all 0.2s;
+}
+.category_container .nav  svg{
+    height:1rem;
+    fill:var(--gray-02);
+    transition:all 0.3s;
+}
+.category_container .nav_next{
+    right:0;
+    transform:translate(50%,-50%);
+}
+.category_container .nav_next svg{
+    margin-left:0.2rem;
+}
+.category_container .nav_prev{
+    left:0;
+    transform:translate(-50%,-50%);
+}
+.category_container .nav_prev svg{
+    margin-right:0.2rem;
+}
+.category_container:hover .nav{
+    width:4.3rem;
+    height:4.3rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.15);
+}
+.category_container:hover .nav svg{
+    height:2rem;
+}
+.category_container .nav.swiper-button-disabled{
+    display:none;
+}
+/*-------------------------------------------------------------------
+        ## id="categorySlider"
+-------------------------------------------------------------------*/
 #categorySlider .category_slider .cate{
     box-sizing: border-box;
     border-right: 1px solid  #efefef;;
@@ -257,9 +304,9 @@
     background-image: url('../img/icon/category/category_16.png');
 }
 #categorySlider .category_slider .cate_17 .cate_bg{
-     background-image: url('../img/icon/category/category_17.png');
- }
- #categorySlider .category_slider .cate_18 .cate_bg{
+    background-image: url('../img/icon/category/category_17.png');
+}
+#categorySlider .category_slider .cate_18 .cate_bg{
     background-image: url('../img/icon/category/category_18.png');
 }
 #categorySlider .category_slider .cate_19 .cate_bg{
@@ -285,51 +332,6 @@
 }
 #categorySlider .category_slider .cate_26 .cate_bg{
     background-image: url('../img/icon/category/category_26.png');
-}
-.category_container .nav{
-    display:flex;
-    align-items: center;
-    justify-content: center;
-    position:absolute;
-    z-index:1;
-    top:50%;
-    width:2.5rem;
-    height:2.5rem;
-    border-radius: 10em;
-    box-shadow: 0 0 10px rgba(0,0,0,0.12);
-    background:#fff;
-    transition:all 0.2s;
-}
-.category_container .nav  svg{
-    height:1rem;
-    fill:var(--gray-02);
-    transition:all 0.3s;
-}
-.category_container .nav_next{
-    right:0;
-    transform:translate(50%,-50%);
-}
-.category_container .nav_next svg{
-    margin-left:0.2rem;
-}
-.category_container .nav_prev{
-    left:0;
-    transform:translate(-50%,-50%);
-}
-.category_container .nav_prev svg{
-    margin-right:0.2rem;
-}
-.category_container:hover .nav{
-    width:4.3rem;
-    height:4.3rem;
-    box-shadow: 0 0 10px rgba(0,0,0,0.15);
-}
-.category_container:hover .nav svg{
-    height:2rem;
-}
-/* disabled처리된 버튼은 안보이게*/
-.category_container .nav.swiper-button-disabled{
-   display:none;
 }
 /*-------------------------------------------------------------------
         ## mall section
@@ -419,7 +421,9 @@
 .mall_contents .category_container{
     width:66.66%;
 }
-
+/*-------------------------------------------------------------------
+        ## id="mallFullSlider"
+-------------------------------------------------------------------*/
 #mallFullSlider .banner_01{
     background-image: url('../img/shopee_mall/banner_01.jpg');
 }
@@ -429,7 +433,9 @@
 #mallFullSlider .banner_03{
     background-image: url('../img/shopee_mall/banner_03.jpg');
 }
-
+/*-------------------------------------------------------------------
+        ## id="mallCateSlider"
+-------------------------------------------------------------------*/
 #mallCateSlider .cate{
     position:relative;
     box-sizing: border-box;
